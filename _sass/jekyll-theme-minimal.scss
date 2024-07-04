@@ -28,8 +28,8 @@ table,
 pre,
 dl {
   color: #0e162a;
-  margin: 0 0 20px;
-  font-size: 18px;
+  margin: 0 0 0 0;
+  font-size: 16px;
 }
 
 h1,
@@ -80,19 +80,60 @@ a:hover small {
 }
 
 .left {
-  margin-left: 5%;
-  margin-right: 5%;
+  // position: fixed; /* Make the left container fixed */
+  // top: 7%;          /* Align it to the top */
+  // left: 3%;         /* Align it to the left */
+  // width: 25%;      /* Set the width of the left container */
+  // height: 100vh;   /* Full height of the viewport */
+  // // overflow: auto;  /* Allow scrolling if content overflows */
+  // padding: 2%;     /* Padding inside the left container */
+  margin-left: 2%;
+  margin-right: 2%;
   margin-top: 2%;
 }
 
 .right {
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start;
+  // align-items: flex-start;
+
+  flex: 1;
+  margin-left: 0%; /* Adjust margin to make space for the fixed left container */
+}
+/* Large project styling */
+.large-project {
+  width: 100%;
+  background-color: #fafafd;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  margin: 5px 0 30px 0; /* Spacing between the large project and grid container */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 5%;
-  margin-top: 2%;
-  margin-left: 5%;
+}
+
+.large-project-header {
+  display: flex;
+  justify-content: space-between;
+  // align-items: flex-start;
+  align-items: center; /* Center the image vertically */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+
+}
+
+.large-project-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.large-project-img {
+  width: 100%; /* Adjust the width as necessary */
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-left: auto; /* Ensures the image is right-aligned */
+  max-width: 450px; /* Set a maximum width */
 }
 
 .grid-container {
@@ -261,6 +302,7 @@ ul.downloads {
 
 .bio_info {
   font-size: 14px;
+  margin-top: 40px;
 }
 
 .downloads ul a:active {
@@ -309,7 +351,7 @@ footer {
   margin-top: 20px;
 }
 
-@media print, screen and (max-width: 1400px) {
+@media print, screen and (max-width: 1024px) {
 
   .container {
     flex-direction: column;
@@ -317,6 +359,19 @@ footer {
 
   .left {
     margin-bottom: 20px;
+    position: static; /* Make the left container fixed */
+  }
+
+  .large-project-header {
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .large-project-img {
+    width: 100%;
+    max-width: none; /* Remove the maximum width */
+    margin-left: 0;
+    margin-top: 20px; /* Add margin to the top for spacing */
   }
 
 

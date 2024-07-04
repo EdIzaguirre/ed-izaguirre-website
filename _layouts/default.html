@@ -116,7 +116,50 @@
         </div>
       </div>
       <div class="right">
-        <h2>Projects</h2>
+        <h2>Featured Project</h2>
+          <!-- Large project section -->
+        <div class="large-project">
+          <div class="large-project-header">
+            <div class="large-project-text">
+              <div class="item-title">
+                <a href="https://github.com/EdIzaguirre/plant-object-detection">
+                  Plant Disease Detector
+                </a>
+              </div>
+              <div class="item-content">
+                <ul>
+                  <li>Machine learning application for plant disease detection</li>
+                  <li>Uses object detection to localize and classify diseases</li>
+                  <li>Built with Metaflow for orchestration</li>
+                  <li>Utilizes PlantDoc dataset (2,569 images, 13 plant species, 30 classes)</li>
+                  <li>Implements:
+                    <ul>
+                      <li>KerasCV for data transformation</li>
+                      <li>AWS Batch for model training</li>
+                      <li>Weights and Biases for evaluation</li>
+                      <li>AWS SageMaker for deployment</li>
+                    </ul>
+                  </li>
+                  <li>Production-grade, end-to-end computer vision solution</li>
+                  <li>Educational project demonstrating ML engineering best practices</li>
+                </ul>
+              </div>
+            </div>
+            <a href="https://github.com/EdIzaguirre/plant-object-detection">
+              <img src="./assets/img/flow_image.png" alt="Large Project" class="large-project-img" />
+            </a>
+          </div>
+          <ul class="tech-list">
+            <li class="tech-tag">KerasCV</li>
+            <li class="tech-tag">Metaflow</li>
+            <li class="tech-tag">AWS Batch</li>
+            <li class="tech-tag">AWS Sagemaker</li>
+            <li class="tech-tag">Weights and Biases</li>
+            <li class="tech-tag">Production Grade</li>
+            <li class="tech-tag">Object Detection</li>
+          </ul>
+        </div>
+        <h2>Other Projects and Research</h2>
         <div class="grid-container">
           <div class="grid-item">
             <a href="https://filmsearch.azurewebsites.net/">
@@ -132,27 +175,6 @@
               <li class="tech-tag">LangChain</li>
               <li class="tech-tag">RAG</li>
               <li class="tech-tag">Azure</li>
-            </ul>
-          </div>
-          <div class="grid-item">
-            <a
-              href="https://towardsdatascience.com/object-detection-using-retinanet-and-kerascv-b07940327b6c"
-            >
-              <img
-                src="./assets/img/object_detection.png"
-                alt="Object Detection"
-              />
-              <div class="item-title">Plant Object Detection</div>
-            </a>
-            <div class="item-content">
-              An end-to-end object detection pipeline to recognize
-              healthy and diseased leaves.
-            </div>
-            <ul class="tech-list">
-              <li class="tech-tag">CV</li>
-              <li class="tech-tag">RetinaNet</li>
-              <li class="tech-tag">KerasCV</li>
-              <li class="tech-tag">TensorFlow</li>
             </ul>
           </div>
           <div class="grid-item">
@@ -176,13 +198,6 @@
               <li class="tech-tag">TensorFlow</li>
             </ul>
           </div>
-          <!-- <div class="grid-item"></div> -->
-        </div>
-        <br />
-
-        <h2>Research</h2>
-
-        <div class="grid-container">
           <div class="grid-item">
             <a href="https://par.nsf.gov/servlets/purl/10319490">
               <img src="./assets/img/MiniCheetahv2.jpeg" alt="Mini Cheetah" />
@@ -198,7 +213,9 @@
               <li class="tech-tag">C++</li>
             </ul>
           </div>
+          <!-- <div class="grid-item"></div> -->
         </div>
+        <br />
       </div>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
