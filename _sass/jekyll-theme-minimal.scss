@@ -362,6 +362,11 @@ footer {
     position: static; /* Make the left container fixed */
   }
 
+  .large-project{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
   .large-project-header {
     flex-direction: column; /* Stack the image and text vertically */
     align-items: flex-start; /* Align items to the start */
