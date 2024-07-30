@@ -1,6 +1,6 @@
 # Ed Izaguirre's Personal Website
 
-Welcome to the repository for my personal website. This site showcases my professional background, featured projects, and other accomplishments. The website is built using Jekyll, a static site generator, and is styled with custom CSS.
+Welcome to the repository for my personal website. This site showcases my professional background, featured projects, and other accomplishments. The website was built using Jekyll, a static site generator, and is styled with custom CSS.
 
 ## Table of Contents
 
