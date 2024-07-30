@@ -44,18 +44,18 @@ Welcome to the repository for my personal website. This site showcases my profes
 - Modify `_layouts/default.html` to change the overall structure of the page.
 ### Styling
 - The main stylesheet is `assets/css/style.scss`. Edit this file to customize the site's appearance.
-- Additional styles are in the `_sass/ directory`.
+- Additional styles are in the `_sass/` directory.
 ### Images
-- Add or replace images in the `assets/img/ directory`.
+- Add or replace images in the `assets/img/` directory.
 - Update image references in `index.md` or `_layouts/default.html` as needed.
 
 ## Deployment
 This site is designed to be deployed on GitHub Pages:
 
-1. Push your changes to the main branch of your GitHub repository.
+1. Push your changes to the `main` branch of your GitHub repository.
 2. Go to your repository settings on GitHub.
-3. In the "Pages" section, set the source to the main branch.
-4. Your site will be published at https://yourusername.github.io/ed-izaguirre-website/.
+3. In the "Pages" section, set the source to the `main` branch.
+4. Your site will be published at `https://yourusername.github.io/ed-izaguirre-website/`.
 
 ## Technologies Used
 - Jekyll
