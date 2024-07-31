@@ -128,13 +128,19 @@
               </div>
               <div class="item-content">
                 <ul>
-                  <li> Rosebud is a film recommendation Q&A bot.</li>
-                  <li> Provides tailored film recommendations using semantic search and metadata filters.                  </li>
-                  <li> Uses a Pinecone vector database of top 100 films (1950-2023) that update automatically. </li>
-                  <li> Combines LangChain with OpenAI Chat model for robust query handling. </li>
-                  <li> Incorporates both offline and online evaluation for accuracy. </li>
-                  <li> Completely open-source and privacy preserving </li>
-                  <li> Production-grade, end-to-end NLP solution</li>
+                  <li> Rosebud is a film recommendation Q&A bot </li>
+                  <li> Uses semantic search and metadata filters for recommendations </li>
+                  <li> Database: ~10000 popular films (1950-2023) pulled from the The Movie Database API </li>
+                  <li> Implements:
+                    <ul>
+                      <li>Prefect for data orchestration</li>
+                      <li>LangChain and Pinecone for retrieval-augmented generation </li>
+                      <li>Weights & Biases and Weave for evaluation</li>
+                      <li>Streamlit for the front-end</li>
+                      <li>OpenAI for embeddings and chat models </li>
+                    </ul>
+                  </li>
+                  <li>Production-grade, end-to-end natural language processing solution </li>
                   <li>
                     <a href="https://medium.com/towards-data-science/how-to-build-a-rag-system-with-a-self-querying-retriever-in-langchain-16b4fa23e9ad">Check out this article</a>
                     I wrote in <i>Towards Data Science</i> documenting my experience in making this project
@@ -225,6 +231,25 @@
             </ul>
           </div>
           <div class="grid-item">
+            <a
+              href="https://github.com/EdIzaguirre/ChatGPT-from-Scratch"
+            >
+              <img
+                src="./assets/img/shakespeare.jpg"
+                alt="GPT from ChatGPT-from-Scratch"
+              />
+              <div class="item-title">GPT from Scratch</div>
+            </a>
+            <div class="item-content">
+              Coded up a mini-GPT model from scratch, training on Shakespeare text.
+            </div>
+            <ul class="tech-list">
+              <li class="tech-tag">Transformers</li>
+              <li class="tech-tag">Pytorch</li>
+              <li class="tech-tag">Generative AI</li>
+            </ul>
+          </div>
+          <div class="grid-item">
             <a href="https://par.nsf.gov/servlets/purl/10319490">
               <img src="./assets/img/MiniCheetahv2.jpeg" alt="Mini Cheetah" />
               <div class="item-title">Autonomous Navigation</div>
@@ -260,7 +285,7 @@
               <div class="item-title">Data Structures and Algorithms</div>
             </a>
             <div class="item-content">
-              A repo for my data structures and algorithms practice.
+              A repository for my data structures and algorithms practice.
             </div>
             <ul class="tech-list">
               <li class="tech-tag">Quicksort</li>
@@ -268,26 +293,7 @@
               <li class="tech-tag">Binary Search</li>
             </ul>
           </div>
-          <!-- <div class="grid-item"></div> -->
-          <div class="grid-item">
-            <a
-              href="https://github.com/EdIzaguirre/ChatGPT-from-Scratch"
-            >
-              <img
-                src="./assets/img/shakespeare.jpg"
-                alt="GPT from ChatGPT-from-Scratch"
-              />
-              <div class="item-title">GPT from Scratch</div>
-            </a>
-            <div class="item-content">
-              Coded up a mini-GPT model from scratch, training on Shakespeare text.
-            </div>
-            <ul class="tech-list">
-              <li class="tech-tag">Transformers</li>
-              <li class="tech-tag">Pytorch</li>
-              <li class="tech-tag">Generative AI</li>
-            </ul>
-          </div>
+          <!-- <div class="grid-item"></div> -->          
         </div>
           
         <br />

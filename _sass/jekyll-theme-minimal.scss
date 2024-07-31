@@ -80,30 +80,30 @@ a:hover small {
 }
 
 .left {
-  // position: fixed; /* Make the left container fixed */
-  // top: 7%;          /* Align it to the top */
-  // left: 3%;         /* Align it to the left */
-  // width: 25%;      /* Set the width of the left container */
-  // height: 100vh;   /* Full height of the viewport */
-  // // overflow: auto;  /* Allow scrolling if content overflows */
-  // padding: 2%;     /* Padding inside the left container */
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 2%;
+  position: fixed; /* Make the left container fixed */
+  top: 2%;          /* Align it to the top */
+  left: 2%;         /* Align it to the left */
+  width: 25%;      /* Set the width of the left container */
+  height: 100vh;   /* Full height of the viewport */
+  overflow: auto;  /* Allow scrolling if content overflows */
+  padding: 2%;     /* Padding inside the left container */
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 0%;
 }
 
 .right {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start;
-  // align-items: flex-start;
+  margin-left: 30%; /* Adjust margin to make space for the fixed left container */
+  // width: calc(75% - 2%); /* Adjust width to avoid overlap with the left container and account for padding */
+  // overflow-y: auto; /* Allow vertical scrolling */
+  height: 100vh;    /* Full height of the viewport */
 
   flex: 1;
-  margin-left: 0%; /* Adjust margin to make space for the fixed left container */
+  // margin-left: 0%; /* Adjust margin to make space for the fixed left container */
 }
 /* Large project styling */
 .large-project {
-  width: 100%;
+  width: 95%;
   background-color: #fafafd;
   padding: 20px;
   font-size: 30px;
@@ -117,14 +117,16 @@ a:hover small {
   display: flex;
   justify-content: space-between;
   // align-items: flex-start;
-  align-items: center; /* Center the image vertically */
+  align-items: start; /* Center the image vertically */
   flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  align-items: center; /* Center the content vertically */
 
 }
 
 .large-project-text {
   flex: 1;
   margin-right: 20px;
+  align-self: flex-start;
 }
 
 .large-project-img {
@@ -134,13 +136,14 @@ a:hover small {
   object-fit: cover;
   margin-left: auto; /* Ensures the image is right-aligned */
   max-width: 450px; /* Set a maximum width */
+  align-self: center; /* Center the image vertically */
 }
 
 .grid-container {
   display: grid;
   padding: 10px;
-  grid-template-columns: 400px 400px; 
-  grid-template-rows: 400px 400px, 400px;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 400px 400px 400px;
 }
 
 // .grid-container > :nth-child(4) {
@@ -351,7 +354,7 @@ footer {
   margin-top: 20px;
 }
 
-@media print, screen and (max-width: 1024px) {
+@media print, screen and (max-width: 1300px) {
 
   .container {
     flex-direction: column;
@@ -359,7 +362,13 @@ footer {
 
   .left {
     margin-bottom: 20px;
+    width: 100%;
     position: static; /* Make the left container fixed */
+  }
+
+  .right {
+    width: 100%;
+    margin-left: 0%; /* Adjust margin to make space for the fixed left container */
   }
 
   .large-project{
@@ -408,11 +417,12 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 1000px) {
   .grid-container {
     grid-template-columns: repeat(1, 100%); /* One column */
-    grid-template-rows: repeat(3, 600px); /* Four rows */
+    grid-template-rows: repeat(5, 400px); /* Four rows */
     padding: 5px;
+
   }
   body {
     word-wrap: break-word;
@@ -443,7 +453,14 @@ footer {
   }
 }
 
-@media print, screen and (max-width: 480px) {
+@media print, screen and (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 100%); /* One column */
+    grid-template-rows: repeat(5, 450px); /* Four rows */
+    padding: 5px;
+
+  }
+  
   body {
     padding: 15px;
   }
