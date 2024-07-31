@@ -428,6 +428,10 @@ footer {
     word-wrap: break-word;
   }
 
+  .container{
+    padding-right: 5%;
+  }
+
   .left {
     margin-left: 2%;
     margin-right: 2%;
@@ -442,6 +446,10 @@ footer {
     padding: 0;
   }
 
+  .large-project{
+    margin-right: 50px
+  }
+
   header ul,
   header p.view {
     position: static;
@@ -454,13 +462,7 @@ footer {
 }
 
 @media print, screen and (max-width: 550px) {
-  .grid-container {
-    grid-template-columns: repeat(1, 100%); /* One column */
-    grid-template-rows: repeat(5, 450px); /* Four rows */
-    padding: 5px;
-
-  }
-  
+ 
   body {
     padding: 15px;
   }
