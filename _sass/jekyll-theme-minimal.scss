@@ -464,7 +464,7 @@ footer {
 @media print, screen and (max-width: 550px) {
   .grid-container {
     grid-template-columns: repeat(1, 100%); /* One column */
-    grid-template-rows: repeat(5, 500px); /* Four rows */
+    grid-template-rows: repeat(5, 600px); /* Four rows */
     padding: 5px;
 
   }
